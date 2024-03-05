@@ -1,0 +1,166 @@
+/* CSS Reset */
+
+/* Normalizar el box model */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Establecer márgenes y padding a 0 en elementos específicos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hacer que los elementos de contenido sean visualmente inline */
+summary {
+  display: inline;
+}
+
+/* Reestablecer los estilos del listado a 'none' y la posición a 'outside' */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Restablecer el tamaño de fuente y la familia de fuentes para los elementos de texto */
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Eliminar los estilos adicionales en los elementos de formularios */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* Corregir el espaciado y el diseño en IE 6/7 */
+button,
+input {
+  overflow: visible;
+}
+
+/* Corregir la herencia de la fuente y el tamaño en algunos navegadores */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Corregir la alineación y el estilo del borde del cuadro del botón en Firefox */
+button,
+input {
+  line-height: normal;
+}
+
+/* Restablecer la apariencia y la saturación de la fuente en los botones y los input de Safari */
+button,
+input {
+  -webkit-appearance: none;
+}
+
+/* Eliminar el espacio interior y la búsqueda de fondo en IE 8/9 */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* Corregir el espaciado del texto en IE 7/8 */
+input[type="checkbox"],
+input[type="radio"] {
+  height: 13px;
+}
+
+/* Corregir los problemas de estilo y diseño de las tablas en IE 6/7 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
