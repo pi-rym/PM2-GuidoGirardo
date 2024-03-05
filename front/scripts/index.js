@@ -1,7 +1,13 @@
 const contenedorTarjetas = document.getElementById("contenedorTarjetas");
 
+$.get("https://students-api.2.us-1.fl0.io/movies", data => {
+    renderCards(data);
+})
+
+
 let i = 0;
-tempData.map(peli => {
+function renderCards(pelis){
+pelis.map(peli => {
     const tarjeta = document.createElement("a");
     tarjeta.className = "tarjeta";
     if(i == 0) tarjeta.href = "0";
@@ -22,19 +28,19 @@ tempData.map(peli => {
     tarjetaYear.textContent = "Year: " + peli.year;
 
     const tarjetaDirector = document.createElement("p");
-    tarjetaDirector.className = "tarjetaTitulo";
+    tarjetaDirector.className = "tarjetaDirector";
     tarjetaDirector.textContent = "Director: " + peli.director;
 
     const tarjetaDuracion = document.createElement("p");
-    tarjetaDuracion.className = "tarjetaTitulo";
+    tarjetaDuracion.className = "tarjetaDuracion";
     tarjetaDuracion.textContent = "Duration : " + peli.duration;
 
     const tarjetaGenero = document.createElement("p");
-    tarjetaGenero.className = "tarjetaTitulo";
+    tarjetaGenero.className = "tarjetaGenero";
     tarjetaGenero.textContent = "Genre : " + peli.genre.join(", ");
 
     const tarjetaRate = document.createElement("p");
-    tarjetaRate.className = "tarjetaTitulo";
+    tarjetaRate.className = "tarjetaRate";
     tarjetaRate.textContent = "Rate : " + peli.rate;
     tarjetaRate.style.color = "yellow";
 
@@ -48,3 +54,4 @@ tempData.map(peli => {
     
     contenedorTarjetas.appendChild(tarjeta);
 })
+}
