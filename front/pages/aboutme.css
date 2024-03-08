@@ -1,0 +1,18 @@
+body{
+    color: #343434;
+    background-color: #dedede;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 2px 0;
+    font-weight: bold;
+    user-select: none;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+}
