@@ -1,11 +1,6 @@
 const renderCards = require("./renderCards");
 const axios = require("axios");
 
-
-/* $.get("https://students-api.2.us-1.fl0.io/movies", data => {
-    renderCards(data);
-}) */
-
 const fetchData = async ()=> {
     try{
         const data = await axios.get("https://students-api.2.us-1.fl0.io/movies");
