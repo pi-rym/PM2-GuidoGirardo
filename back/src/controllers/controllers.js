@@ -1,5 +1,14 @@
-const getMovies = (req, res) => {
-    res.status(200).send("Próximamente estarán disponibles los datos de películas.");
-};
+const movieService = require("../services/movieService");
 
-module.exports = { getMovies };
+module.exports = {
+    getMovies: async (req, res) => {
+        try{
+            const movies = await movieService.movieService();
+            res.status(200).json(movies);
+        }catch(e){
+            res.status(500).json({
+                    error: "Error interno del servidor"
+                })
+        }
+    }
+}
