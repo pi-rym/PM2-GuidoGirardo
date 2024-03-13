@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const fetchData = async ()=> {
     try{
-        const data = await axios.get("https://students-api.2.us-1.fl0.io/movies");
+        const data = await axios.get("http://localhost:3000/movies");
         renderCards(data.data);
     }catch(e){
         console.log(e);
