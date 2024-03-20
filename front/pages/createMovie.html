@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create movie</title>
+    <link rel="stylesheet" href="createMovie.css">
+</head>
+<body>
+
+    <h1>FORMULARIO PARA CREAR PELÍCULA</h1>
+    
+    <div>
+
+    <form id="movieForm">
+        <label for="title">Título:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="year">Año:</label><br>
+        <input type="number" id="year" name="year" required><br><br>
+
+        <label for="director">Director:</label><br>
+        <input type="text" id="director" name="director" required><br><br>
+
+        <label for="duration">Duración:</label><br>
+        <input type="text" id="duration" name="duration" required><br><br>
+
+        <label for="genre">Género:</label><br>
+        <input type="text" id="genre" name="genre" required><br><br>
+
+        <label for="rate">Calificación:</label><br>
+        <input type="number" id="rate" name="rate" step="0.1" min="0" max="10" required><br><br>
+
+        <label for="poster">URL del Póster:</label><br>
+        <input type="url" id="poster" name="poster" required><br><br>
+
+        <input type="submit" value="Guardar Película">
+    </form>
+
+</div>
+
+    <script src="./createMovies.js"></script>
+    
+</body>
+</html>
