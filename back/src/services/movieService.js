@@ -1,4 +1,12 @@
-class Movie {
+const Movie = require("../models/Movie")
+
+module.exports = {
+    movieService: async ()=>{
+        return await Movie.find();
+    }
+}
+
+/* class Movie {
   constructor(title, year, director, duration, genre, rate, poster) {
     if (!title || !director || !poster) {
       throw new Error('Se requieren las propiedades "title", "director" y "poster" para crear una película.');
@@ -59,4 +67,4 @@ module.exports = {
       
       return movies;
   }
-}
+} */

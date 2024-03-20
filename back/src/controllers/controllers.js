@@ -4,11 +4,12 @@ module.exports = {
     getMovies: async (req, res) => {
         try{
             const movies = await movieService.movieService();
+            console.log(movies);
             res.status(200).json(movies);
         }catch(e){
             res.status(500).json({
                     error: "Error interno del servidor"
-                })
+            })
         }
     }
 }
